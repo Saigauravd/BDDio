@@ -1,0 +1,114 @@
+package pages;
+
+import java.time.Duration;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.devtools.v107.network.model.WebSocketWillSendHandshakeRequest;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import net.bytebuddy.agent.builder.AgentBuilder.RedefinitionStrategy.DiscoveryStrategy.Explicit;
+
+
+public class apply_admin_leave_page {
+
+
+	private WebDriver driver;
+
+
+
+	WebElement username =driver.findElement(By.xpath("//*[@id='username']"));
+
+	WebElement  pass =driver.findElement( By.xpath("//*[@id='password']"));
+
+	WebElement admin = driver.findElement(By.xpath("//*[@class='m-menu-submenu']"));
+	WebElement  apply_l = driver.findElement(By.xpath("//*[@id='1684750002769']"));
+
+	WebElement  emp_id  = driver.findElement(By.xpath("//*[@id='employee-id']"));   //select type
+
+	WebElement from_date =driver.findElement(By.xpath("//*[@id='date-input-from']"));
+
+	WebElement  to_date =driver.findElement(By.xpath("//*[@id='date-input-to']"));
+
+	WebElement  leave_type =driver.findElement(By.xpath("//*[@id='leave-types']")); //select type
+
+	WebElement  reason_for_leave=driver.findElement(By.xpath("//*[@id='reason-for-leave']"));
+
+	WebElement  Save_leave=driver.findElement(By.xpath("//*[@id=\"markup-view-container-1688024469002\"]/div/div[2]/div/div/button[1]"));
+
+	//private By reset_leave =By.xpath("//*[@class='btn-cnl]");
+
+
+
+	public apply_admin_leave_page (WebDriver driver)
+	{
+		this.driver=driver;
+
+	}
+
+	public void credentialsuser(String use)
+	{
+
+		Actions act = new Actions(driver);
+		username.sendKeys(use);
+
+		act.sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.ENTER).build().perform();
+	}
+	public void credentialspass(String pas) {
+
+		Actions act = new Actions(driver);
+		pass.sendKeys(pas);
+
+		act.sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.ENTER).build().perform();
+
+	}
+
+
+
+
+
+	public void leavePage() throws InterruptedException {
+
+		WebDriverWait wait  = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.visibilityOf((WebElement) admin));
+		admin.click();
+		Thread.sleep(2000);
+
+		apply_l.click();
+		Thread.sleep(2000);
+
+		Select selid = new Select(emp_id);
+
+		selid.selectByValue("3821714796349320");
+
+		from_date.sendKeys("12101997");
+
+		to_date.sendKeys("29062023");
+
+		Select seltype = new Select(leave_type);
+
+		seltype.selectByValue("3821120390141103");
+
+
+		reason_for_leave.sendKeys("marriage");
+
+		Save_leave;
+
+
+
+
+
+
+
+
+	}
+
+}

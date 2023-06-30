@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="com.ajr.mportal"/>
+    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+    <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS"/>
+    <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+        <listEntry value="com.mqa.btr.pages.EmergencyAddress"/>
+        <listEntry value="com.mqa.btr.pages.Menus"/>
+        <listEntry value="com.mqa.btr.pages.Login"/>
+        <listEntry value="com.mqa.testcases.CallSettingsTest"/>
+        <listEntry value="com.mqa.btr.mail.Javamail"/>
+        <listEntry value="com.mqa.btr.base.BaseTest"/>
+        <listEntry value="com.mqa.testcases.RecordingsTest"/>
+        <listEntry value="com.mqa.testcases.SharedMenus"/>
+        <listEntry value="com.mqa.testcases.Testcasecheck"/>
+        <listEntry value="com.mqa.btr.pages.CallHandler"/>
+        <listEntry value="com.mqa.testcases.VerifyUnsubscribedProductList"/>
+        <listEntry value="com.mqa.testcases.SchedulesTest"/>
+        <listEntry value="com.mqa.testcases.EmergencyAddressTest"/>
+        <listEntry value="com.mqa.btr.pages.CallSettings"/>
+        <listEntry value="com.mqa.testcases.SharedGreetings"/>
+        <listEntry value="com.mqa.testcases.CallHistoryTest"/>
+        <listEntry value="com.mqa.btr.pages.Inbox"/>
+        <listEntry value="com.mqa.testcases.PostsTest"/>
+        <listEntry value="com.mqa.testcases.HomepageTest"/>
+        <listEntry value="com.mqa.testcases.LoginTest"/>
+        <listEntry value="com.mqa.testcases.InboxTest"/>
+        <listEntry value="com.mqa.testcases.DashboardTest"/>
+        <listEntry value="com.mqa.testcases.Sample"/>
+        <listEntry value="com.mqa.btr.pages.AppsLogo"/>
+        <listEntry value="com.mqa.testcases.BuyNumbers"/>
+        <listEntry value="com.mqa.btr.pages.Recordings"/>
+        <listEntry value="com.mqa.testcases.TeamchatTest"/>
+        <listEntry value="com.mqa.btr.pages.Users"/>
+        <listEntry value="com.mqa.btr.pages.UnSubscribedProd"/>
+        <listEntry value="com.mqa.btr.pages.BuyNum"/>
+        <listEntry value="com.mqa.btr.pages.Schedules"/>
+        <listEntry value="com.mqa.testcases.MenusTest"/>
+        <listEntry value="com.mqa.testcases.LoinAppTest"/>
+        <listEntry value="com.mqa.btr.pages.BuyNumbers"/>
+        <listEntry value="com.mqa.testcases.VoicemailsTest"/>
+        <listEntry value="com.mqa.testcases.GlobalInboxTest"/>
+        <listEntry value="com.mqa.btr.base.Testing"/>
+        <listEntry value="com.mqa.btr.pages.CallHistory"/>
+        <listEntry value="com.mqa.testcases.CallHandlers"/>
+        <listEntry value="com.mqa.testcases.GreetingsTest"/>
+        <listEntry value="com.mqa.btr.pages.Greetings"/>
+        <listEntry value="com.mqa.testcases.BlockedNumbersTest"/>
+        <listEntry value="com.mqa.ExtentReportListener.ExtentReporterNG"/>
+        <listEntry value="com.mqa.btr.pages.Voicemail"/>
+        <listEntry value="com.mqa.testcases.DataProvTest"/>
+    </listAttribute>
+    <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+    <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+    <stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+    <intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+</launchConfiguration>

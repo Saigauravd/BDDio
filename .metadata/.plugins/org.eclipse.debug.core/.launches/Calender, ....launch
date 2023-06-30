@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Maven_pull"/>
+    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+    <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS"/>
+    <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+        <listEntry value="utility.TimeStampPrinter"/>
+        <listEntry value="pages.Calender"/>
+        <listEntry value="testclass.MyTaskTest"/>
+        <listEntry value="pages.BuyProduct"/>
+        <listEntry value="extentlisteners.ExtentReportGen"/>
+        <listEntry value="pages.LoginPageNew"/>
+        <listEntry value="utility.Screenshot"/>
+        <listEntry value="utility.ExcelReader"/>
+        <listEntry value="extentlisteners.TestNGListeners"/>
+        <listEntry value="pages.ClientPage"/>
+        <listEntry value="testclass.HomeTest"/>
+        <listEntry value="pages.HomePage"/>
+        <listEntry value="testclass.BuyProductTest"/>
+        <listEntry value="pages.LoginPage"/>
+        <listEntry value="utility.ReadProperties"/>
+        <listEntry value="pages.MyTaskPage"/>
+        <listEntry value="testclass.LoginNewTest"/>
+        <listEntry value="testclass.BaseTest"/>
+        <listEntry value="testclass.CalenderTest"/>
+        <listEntry value="testclass.LoginTest"/>
+        <listEntry value="testclass.ClientTest"/>
+    </listAttribute>
+    <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+    <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+    <stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+    <intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+</launchConfiguration>

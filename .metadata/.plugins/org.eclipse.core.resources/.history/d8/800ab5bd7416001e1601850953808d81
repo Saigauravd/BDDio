@@ -1,0 +1,44 @@
+package testing;
+
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+
+import Utility.proper;
+import pages.apply_admin_leave_page;
+
+public class basefile {
+
+	
+	
+	public static WebDriver driver;
+	 public apply_admin_leave_page applyLeave;
+	
+	 @BeforeSuite
+	  public void initbrowser() throws IOException, InterruptedException
+	  {
+		 ChromeOptions options = new ChromeOptions();
+		 options.addArguments("--remote-allow-origins=*");
+
+		 driver = new ChromeDriver(options);
+		
+	
+		 
+		 driver.get(proper.prop("Url"));
+		
+		
+	
+	  }
+	 
+	 @BeforeClass
+	 public void createobject() {
+		 
+		applyLeave  = new apply_admin_leave_page(driver);
+		
+	 }
+}

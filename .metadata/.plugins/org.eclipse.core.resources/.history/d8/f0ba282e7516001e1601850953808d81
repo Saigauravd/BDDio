@@ -1,0 +1,28 @@
+package testing;
+
+import java.io.IOException;
+
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+import Utility.proper;
+
+
+
+
+public class Apply_admin_leave_test extends basefile{
+
+	
+	
+	
+
+	@Test
+	public void onety  () throws IOException, InterruptedException
+	{
+	 applyLeave.credentialsuser(proper.prop("user"));
+	Thread.sleep(5000);
+	 applyLeave.credentialspass( proper.prop("pass"));
+	 
+	 applyLeave.leavePage();
+	}
+}

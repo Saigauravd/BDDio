@@ -1,0 +1,21 @@
+package tanent;
+
+import org.testng.annotations.Test;
+
+import BLS_utility.Propper_bls;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class Login3821308368850916 {
+	
+	
+	@Test
+	public void login () {
+		
+		RestAssured.baseURI = Propper_bls.promp("Url");
+		  
+		Response r = given()
+				.
+	}
+
+}

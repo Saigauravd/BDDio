@@ -1,0 +1,36 @@
+package testing;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+
+import Utility.proper;
+import pages.apply_admin_leave_page;
+
+public class basefile {
+
+	
+	
+	public static WebDriver driver;
+	 public apply_admin_leave_page applyLeave;
+	 
+	 @BeforeSuite
+	  public void initbrowser() throws IOException
+	  {
+		 
+		 driver = new ChromeDriver();
+		 driver.get(proper.prop("Url"));
+		  driver.manage().window().maximize();
+		  
+	  }
+	 
+	 @BeforeClass
+	 public void createobject() {
+		 
+		applyLeave  = new apply_admin_leave_page(driver);
+		
+	 }
+}

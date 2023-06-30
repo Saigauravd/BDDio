@@ -1,0 +1,24 @@
+package testing;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import Utility.proper;
+
+
+
+
+public class Apply_admin_leave_test extends basefile{
+
+	
+	
+	
+
+	@Test
+	public void onety  () throws IOException, InterruptedException
+	{
+	 applyLeave.credentials(proper.prop("user"), proper.prop("pass"));
+	 applyLeave.leavePage();
+	}
+}
